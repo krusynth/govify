@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -z "$1" ]
+  then
+    echo "No filename supplied"
+fi
+
+cat $1 | convert \
+-font Courier \
+text:- \
+-rotate `convert null: -format '%[fx:rand()*15-7]' info:` \
+-attenuate 0.1247 +noise Gaussian \
+-colorspace Gray \
+$1.pdf
