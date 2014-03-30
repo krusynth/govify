@@ -1,6 +1,4 @@
 #.gov.ify
-======
-
 
 One of the biggest hurdles for government agencies to embrace Open Data is the ability to produce documents in a government-usable format. Well-formatted XML and machine-readable text are not government-friendly formats.
 
