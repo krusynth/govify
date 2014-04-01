@@ -6,7 +6,7 @@ if [ -z "$1" ]
     exit 1
 fi
 
-cat $1 | convert \
+cat $1 | fold | convert \
 -font Courier \
 text:- \
 -rotate `convert null: -format '%[fx:rand()*15-7]' info:` \
