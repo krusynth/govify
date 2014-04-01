@@ -24,3 +24,8 @@ This package is just a quick bash wrapper around ImageMagick.  As a result, you'
 
 * Provide web front-end.
 * Add redaction based on keyword list.
+
+
+##Also:
+
+We also have available the frontend to the [govify.org website](https://github.com/opengovfoundation/govify-site) (PHP), which handles file uploads and the [backend worker process](https://github.com/opengovfoundation/govify-worker) (Python) which does the real work.  Both integrate with the [Rackspace Cloud API](http://developer.rackspace.com/).
