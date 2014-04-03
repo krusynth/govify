@@ -10,10 +10,11 @@ These legible but closed-format documents can be easily used for any government 
 
 ##Installation:
 
-This package is just a quick bash wrapper around ImageMagick.  As a result, you'll just need to download the package and run `govify`.
+Govify requires [ImageMagick](http://www.imagemagick.org/) and [GhostScript](http://www.ghostscript.com/). For example, to install the necessary dependencies on OS X, simply run:
 
-* Note: This package requires a shell (Linux/Mac OS X/etc) and [ImageMagick](http://www.imagemagick.org/).
+`brew install imagemagick ghostscript`
 
+You may be able to install the dependency similarly with your platform's package manager by runing the equivalent command with `ack` or `yum`.
 
 ##Usage:
 
