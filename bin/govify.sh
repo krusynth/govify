@@ -6,9 +6,13 @@ if [ -z "$1" ]
     exit 1
 fi
 
-pandoc -t plain $1 | \
-sed -En "s/(agile|cloud|blockchain|technology|office|data|taxpayer)/████████████/gp" | \
-fold | \
+pandoc -t plain+ignore_line_breaks $1 -o $1.txt
+
+awk -i inplace ' /^$/ { print "\n"; } /./ { printf("%s ", $0); } END { print ""; } ' $1.txt
+
+sed -Ei "s/(agile|cloud|blockchain|technology|office|data|taxpayer)/████████████/gI" $1.txt
+
+cat $1.txt | fold | \
 convert \
 -font CourierNew \
 text:- \
@@ -17,3 +21,5 @@ text:- \
 +noise Gaussian \
 -colorspace Gray \
 $1.pdf
+
+rm $1.txt

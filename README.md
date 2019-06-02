@@ -8,11 +8,13 @@ These legible but closed-format documents can be easily used for any government 
 
 ## Installation:
 
-Govify requires [Pandoc](https://pandoc.org/), [ImageMagick](http://www.imagemagick.org/), and [GhostScript](http://www.ghostscript.com/). To install the necessary dependencies on OS X, simply run:
+Govify requires [Pandoc](https://pandoc.org/), [ImageMagick](http://www.imagemagick.org/), and [GhostScript](http://www.ghostscript.com/).
 
-`brew install imagemagick ghostscript pandoc`
+On Mac OS, you'll also need a GNU-compatible `sed`, since it ships with BSD `sed` which does not support case-insensitive matching. You'll also need to make it the default (follow Homebrew's instructions on how to achieve this).
 
-You may be able to install the dependency similarly with your platform's package manager by runing the equivalent command with `ack` or `yum`.
+To install all the dependencies with homebrew, run:
+
+`brew install imagemagick ghostscript pandoc gnu-sed`
 
 ## Usage:
 
