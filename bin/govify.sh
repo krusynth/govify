@@ -20,6 +20,7 @@ text:- \
 -attenuate 0.25 \
 +noise Gaussian \
 -colorspace Gray \
+-compress Zip \
 $1.pdf
 
 rm $1.txt
