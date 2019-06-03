@@ -1,4 +1,6 @@
-# Govify.cloud
+![Govify.Cloud logo](https://raw.githubusercontent.com/krues8dr/govify/master/public/img/govify-logo.gif)
+
+# Govify.Cloud
 
 **Note: this is a complete rewrite of the Govify project. Now Cloud-enabled!**
 
