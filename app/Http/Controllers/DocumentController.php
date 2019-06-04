@@ -62,7 +62,8 @@ class DocumentController extends Controller {
             $doc->tempfile = $file;
             $doc->save();
 
-            ProcessDocument::dispatch($doc);
+            ProcessDocument::dispatch($doc)
+                ->delay(now()->addSeconds(1));
 
             return view('document.success');
         }
