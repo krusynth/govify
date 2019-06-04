@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Validator;
 
 class DocumentController extends Controller {
     function index() {
-        $docs = Document::paginate(20);
+        $docs = Document::whereNotNull('url')->paginate(20);
         $links = $docs->links();
         return view('document.index', [
             'docs' => $docs,
