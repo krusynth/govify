@@ -68,6 +68,7 @@ MM.    78MMF MM.      ,MP  `MM A'      MM    MM            MM
         <P>
             <FONT FACE="Verdana,Arial,Helvetica,sans-serif" SIZE=2>
                <B>Govify</B> is yet another government innovation from <B><A HREF="https://krues8dr.com/">Bill Hunt</A></B>.
+               Note: Although the technology does work, Govify is a parody website. Please do not use these documents in the real world!
            </FONT>
        </P>
     </TD></TR>
