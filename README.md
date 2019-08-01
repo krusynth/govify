@@ -19,10 +19,3 @@ On Mac OS, you'll also need a GNU-compatible `sed`, since it ships with BSD `sed
 To install all the dependencies with homebrew, run:
 
 `brew install imagemagick ghostscript pandoc gnu-sed`
-
-## Usage:
-
-`./govify.sh filename`
-
-
-
